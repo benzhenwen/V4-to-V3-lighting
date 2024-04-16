@@ -99,16 +99,29 @@ for index in range(len(event_box_groups)):
 
     new_body["b"] = event_box["b"]
     new_body["g"] = event_box["g"]
-    new_body["e"] = []
 
+    new_body["e"] = []
+    # for each event box
     for e_body in event_box["e"]:
         new_e_body: dict = {}
+
         new_e_body["f"] = index_filters[e_body["f"]]
         new_e_body = new_e_body | get_event_box(event_box_type)[e_body["e"]]
+        if event_box_type == 1 or event_box_type == 3: # type 1 and 3 replace "s" with "r"
+            new_e_body["r"] = new_e_body["s"]
+            del new_e_body["s"]
+        new_e_body["i"] = new_e_body["e"] # rename easing e -> i
+        del new_e_body["e"]
+
+        new_e_body["l"] = []
+        # for each event
+        for l_body in e_body["l"]:
+            new_l_body: dict = {}
+
+            new_l_body["b"] = l_body["b"]
+            new_l_body = new_l_body | get_event(event_box_type)[l_body["i"]]
+            
 
         new_body["e"].append(new_e_body)
         
-
-
-
 print(structure)
