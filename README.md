@@ -14,3 +14,5 @@ the lightshow will be merged into the beatmap (but not deleted). if a non-existe
 ## Issues
 me: ngl this is my first actual attempt at a proper repo. if you have any feedback about the script or my general lack of knowledge message me on discord @ ben208
 (im sure there are issues, no way i wrote something that just works first try)
+### Thanks
+officialMECH for writing the documentation on the v4 lighting format and answering my endless questions about it
