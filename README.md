@@ -7,6 +7,7 @@ written in python 311, 3.9 or above required
 - run converter.py
 - when prompted, provide the input file path. ex: lightshow.dat 
 - when prompted, provide the output file path. ex: ExpertPlusStandard.dat
+  
 the input file should be a v4.0.0 lightshow
 the output file should be a v3.3.0 beatmap
 the lightshow will be merged into the beatmap (but not deleted). if a non-existent file for output is selected, a new file will be created.
