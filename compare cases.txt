@@ -1,0 +1,183 @@
+EVENT TYPE 1
+
+{
+  "eventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "t": 1,
+      "e": [
+        {
+          "f": 0, // Index Filter Metadata Index
+          "e": 0, // Event Box Metadata Index
+          "l": [
+            {
+              "b": 0.0, // Beat Offset
+              "i": 0, // Event Metadata Index
+            }
+          ],
+        }
+      ]
+    }
+  ],
+  "indexFilters": [
+    {...},
+  ],
+  "lightColorEventBoxes": [
+    {
+      "w": 1.0, // Beat Distribution: Value
+      "d": 1, // Beat Distribution: Type
+      "s": 1.0, // Brightness Distribution: Value
+      "t": 1, // Brightness Distribution: Type
+      "b": 1, // Brightness Distribution: Affects First
+      "e": 0, // Brightness Distribution: Easing
+    }
+  ],
+  "lightColorEvents": [
+    {
+      "p": 0, // Transition Type
+      "e": 0, // Easing
+      "c": 1, // Color
+      "s": 1.0, // Brightness
+      "f": 0, // Strobe Frequency
+      "sb": 0, // Strobe Brightness
+      "sf": 0, // Strobe Fade
+    }
+  ],
+}
+
+EVENT TYPE 2
+
+{
+  "eventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "t": 2,
+      "e": [
+        {
+          "f": 0, // Index Filter Metadata Index
+          "e": 0, // Event Box Metadata Index
+          "l": [
+            {
+              "b": 0.0, // Beat Offset
+              "i": 0, // Event Metadata Index
+            }
+          ],
+        }
+      ]
+    }
+  ],
+  "indexFilters": [
+    {...}
+  ],
+  "lightRotationEventBoxes": [
+    {
+      "w": 1.0, // Beat Distribution: Value
+      "d": 1, // Beat Distribution: Type
+      "s": 1.0, // Rotation Distribution: Value
+      "t": 1, // Rotation Distribution: Type
+      "b": 1, // Rotation Distribution: Affects First
+      "e": 0, // Rotation Distribution: Easing
+      "a": 0, // Axis
+      "r": 1, // Invert Axis
+    }
+  ],
+  "lightRotationEvents": [
+    {
+      "p": 0, // Transition Type
+      "e": 1, // Easing
+      "r": 340.0, // Magnitude
+      "d": 1, // Direction
+      "l": 1, // Loop Count
+    }
+  ],
+}
+
+EVENT TYPE 3
+
+{
+  "eventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "t": 3,
+      "e": [
+        {
+          "f": 0, // Index Filter Metadata Index
+          "e": 0, // Event Box Metadata Index
+          "l": [
+            {
+              "b": 0.0, // Beat Offset
+              "i": 0, // Event Metadata Indices
+            }
+          ],
+        }
+      ]
+    }
+  ],
+  "indexFilters": [
+    {...}
+  ],
+  "lightTranslationEventBoxes": [
+    {
+      "w": 1.0, // Beat Distribution: Value
+      "d": 1, // Beat Distribution: Type
+      "s": 1.0, // Gap Distribution: Value
+      "t": 1, // Gap Distribution: Type
+      "b": 1, // Gap Distribution: Affects First
+      "e": 0, // Gap Distribution: Easing
+    }
+  ],
+  "lightTranslationEvents": [
+    {
+      "p": 0, // Transition Type
+      "e": 1, // Easing
+      "t": 100.0, // Magnitude
+    }
+  ],
+}
+
+EVENT TYPE 4
+
+{
+  "eventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "t": 4,
+      "e": [
+        {
+          "f": 0, // Index Filter Metadata Index
+          "e": 0, // Event Box Metadata Index
+          "l": [
+            {
+              "b": 0.0, // Beat Offset
+              "i": 0, // Float FX Event Metadata Index
+            }
+          ],
+        }
+      ]
+    }
+  ],
+  "indexFilters": [
+    {...}
+  ],
+  "fxEventBoxes": [
+    {
+      "w": 1.0, // Beat Distribution: Value
+      "d": 1, // Beat Distribution: Type
+      "s": 1.0, // FX Distribution: Value
+      "t": 1, // FX Distribution: Type
+      "b": 1, // FX Distribution: Affects First
+      "e": 0, // FX Distribution: Easing
+    }
+  ],
+  "floatFxEvents": [
+    {
+      "p": 0, // Transition Type
+      "e": 1, // Easing
+      "v": 100.0, // Value
+    }
+  ],
+}

@@ -1,0 +1,155 @@
+EVENT TYPE 1
+
+{
+  "lightColorEventBoxGroups": [
+    {
+      "b": 2.0, 
+      "g": 0,
+      "e": [
+        {
+          "f": {...}, // Index Filter
+          "w": 1.0, // Beat Distribution: Value
+          "d": 1, // Beat Distribution: Type
+          "r": 1.0, // Brightness Distribution: Value
+          "t": 1, // Brightness Distribution: Type
+          "b": 1, // Brightness Distribution: Affects First
+          "i": 0, // Brightness Distribution: Easing
+          // Light Color Events
+          "e": [
+            {
+              "b": 0.0, // Beat Offset
+              "i": 0, // Transition Type
+              "c": 1, // Color
+              "s": 1.0, // Brightness
+              "f": 0, // Strobe Frequency
+              "sb": 0, // Strobe Brightness
+              "sf": 0, // Strobe Fade
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+Brightness Distribution: Value gets renamed from "s" to "r"
+Brightness Distribution: Easing gets renamed from "e" to "i"
+
+Transition Type gets renamed from "p" to "i"
+Easing value "e" is not present from 4.0.0 (not in v3)
+
+
+
+EVENT TYPE 2
+
+{
+  "lightRotationEventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "e": [
+        {
+          "f": {...}, // Index Filter
+          "w": 1.0, // Beat Distribution: Value
+          "d": 1, // Beat Distribution: Type
+          "s": 1.0, // Rotation Distribution: Value
+          "t": 1, // Rotation Distribution: Type
+          "b": 1, // Rotation Distribution: Affects First
+          "i": 0, // Rotation Distribution: Easing
+          "a": 0, // Axis
+          "r": 1, // Invert Axis
+          // Light Rotation Events
+          "l": [
+            {
+              "b": 0.0, // Beat Offset
+              "p": 0, // Transition Type
+              "e": 1, // Easing
+              "r": 340.0, // Magnitude
+              "d": 1, // Direction
+              "l": 1, // Loop Count
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+Rotation Distribution: Easing gets renamed from "e" to "i"
+this one also contains "a" and "r"
+
+
+EVENT TYPE 3
+
+{
+  "lightTranslationEventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "e": [
+        {
+          "f": {...}, // Index Filter
+          "w": 1.0, // Beat Distribution: Value
+          "d": 1, // Beat Distribution: Type
+          "r": 1.0, // Gap Distribution: Value
+          "t": 1, // Gap Distribution: Type
+          "b": 1, // Gap Distribution: Affects First
+          "i": 0, // Gap Distribution: Easing
+          // Light Translation Events
+          "e": [
+            {
+              "b": 0.0, // Beat Offset
+              "p": 0, // Transition Type
+              "e": 1, // Easing
+              "t": 100.0, // Magnitude
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+Gap Distribution: Value gets renamed from "s" to "r"
+Gap Distribution: Easing gets renamed from "e" to "i"
+
+
+EVENT TYPE 4
+
+{
+  "vfxEventBoxGroups": [
+    {
+      "b": 2.0,
+      "g": 0,
+      "e": [
+        {
+          "f": {...}, // Index Filter
+          "w": 1.0, // Beat Distribution: Value
+          "d": 1, // Beat Distribution: Type
+          "s": 1.0, // FX Distribution: Value
+          "t": 1, // FX Distribution: Type
+          "b": 1, // FX Distribution: Affects First
+          "i": 0, // FX Distribution: Easing
+          "l": [0], // Float FX Event Metadata Indices
+        }
+      ]
+    },
+  ],
+  "_fxEventsCollection": {
+    // Float FX Event Collection
+    "_fl": [
+      {
+        "b": 0.0, // Beat Offset
+        "p": 0, // Transition Type
+        "e": 1, // Easing
+        "v": 100.0, // Value
+      }
+    ],
+    // Integer FX Event Collection
+    "_il": []
+  }
+}
+
+FX Distribution: Easing gets renamed from "e" to "i"
+
+
