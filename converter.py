@@ -314,7 +314,7 @@ except:
 
 
 output: str = json.dumps(output_contents, separators=(',', ':'))
-output.replace("True", "true")
+output.replace("True", "true").replace("False", "false")
 
 o = open(output_path, "w")
 o.write(output)
