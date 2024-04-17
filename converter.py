@@ -1,10 +1,7 @@
 import json
 
-# input_path: str = input("input file path: ")
-# output_path: str = input("output file path: ")
-
-input_path: str = "test.txt"
-output_path: str = "test_output.txt"
+input_path: str = input("input file path: ")
+output_path: str = input("output file path: ")
 
 # file read
 input_f = open(input_path, "r")
