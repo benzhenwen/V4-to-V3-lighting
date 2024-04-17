@@ -302,8 +302,20 @@ del structure["floatFxEvents"]
 
 
 # file write
-output: str = json.dumps(structure, separators=(',', ':'))
+try: 
+    output_f = open(output_path, "r")
+    output_contents: json = json.loads(output_f.read())
+    output_f.close()
+
+    for key in structure:
+        output_contents[key] = structure[key]
+except:
+    output_contents:json = structure
+
+
+output: str = json.dumps(output_contents, separators=(',', ':'))
 output.replace("True", "true")
-output_f = open(output_path, "w")
-output_f.write(output)
-output_f.close()
+
+o = open(output_path, "w")
+o.write(output)
+o.close()
