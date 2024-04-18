@@ -1,3 +1,5 @@
+## you should probably just use this ngl
+https://converter.stormpacer.xyz/
 # BeatSaber lightshow converter from v4.0.0 to v3.3.0
 written in python 311, 3.9 or above required
 ## How to use
